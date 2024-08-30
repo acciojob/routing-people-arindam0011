@@ -15,79 +15,38 @@ import { Suspense, lazy } from "react";
 // const User8 = lazy(() => import('./User8'));
 // const User9 = lazy(() => import('./User9'));
 // const User10 = lazy(() => import('./User10'));
+import User1 from "./User1";
+import User2 from "./User2";
+import User3 from "./User3";
+import User4 from "./User4";
+import User5 from "./User5";
+import User6 from "./User6";;
+import User7 from "./User7";
+import User8 from "./User8";
+import User9 from "./User9";
+import User10 from "./User10";
 
-import User1 from './User1';
-import User2 from './User2';
-import User3 from './User3';
-import User4 from './User4';
-import User5 from './User5';
-import User6 from './User6';
-import User7 from './User7';
-import User8 from './User8';
-import User9 from './User9';
-import User10 from './User10';
 
 const App = () => {
-  
   return (
-    
     <BrowserRouter>
-      
-      <Routes>
-        <Route path="/" element={<Navbar />} />
-        <Route path="/users/1" element={
-          <Suspense fallback={<Loading />}>
-            <User1 />
-          </Suspense>
-        } />
-        <Route path="/users/2" element={
-          <Suspense fallback={<Loading />}>
-            <User2 />
-          </Suspense>
-        } />
-        <Route path="/users/3" element={
-          <Suspense fallback={<Loading />}>
-            <User3 />
-          </Suspense>
-        } />
-        <Route path="/users/4" element={
-          <Suspense fallback={<Loading />}>
-            <User4 />
-          </Suspense>
-        } />
-        <Route path="/users/5" element={
-          <Suspense fallback={<Loading />}>
-            <User5 />
-          </Suspense>
-        } />
-        <Route path="/users/6" element={
-          <Suspense fallback={<Loading />}>
-            <User6 />
-          </Suspense>
-        } />
-        <Route path="/users/7" element={
-          <Suspense fallback={<Loading />}>
-            <User7 />
-          </Suspense>
-        } />
-        <Route path="/users/8" element={
-          <Suspense fallback={<Loading />}>
-            <User8 />
-          </Suspense>
-        } />
-        <Route path="/users/9" element={
-          <Suspense fallback={<Loading />}>
-            <User9 />
-          </Suspense>
-        } />
-        <Route path="/users/10" element={
-          <Suspense fallback={<Loading />}>
-            <User10 />
-          </Suspense>
-        } />
-      </Routes>
+      <Suspense fallback={<Loading />}>
+        <Routes>
+          <Route path="/" element={<Navbar />} />
+          <Route path="/users/1" element={<User1 />} />
+          <Route path="/users/2" element={<User2 />} />
+          <Route path="/users/3" element={<User3 />} />
+          <Route path="/users/4" element={<User4 />} />
+          <Route path="/users/5" element={<User5 />} />
+          <Route path="/users/6" element={<User6 />} />
+          <Route path="/users/7" element={<User7 />} />
+          <Route path="/users/8" element={<User8/>} />
+          <Route path="/users/9" element={<User9 />} />
+          <Route path="/users/10" element={<User10 />} />
+        </Routes>
+      </Suspense>
     </BrowserRouter>
   );
-};
+}
 
 export default App;
