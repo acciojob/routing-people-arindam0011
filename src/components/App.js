@@ -15,36 +15,87 @@ import { Suspense, lazy } from "react";
 // const User8 = lazy(() => import('./User8'));
 // const User9 = lazy(() => import('./User9'));
 // const User10 = lazy(() => import('./User10'));
-import User1 from "./User1";
-import User2 from "./User2";
-import User3 from "./User3";
-import User4 from "./User4";
-import User5 from "./User5";
-import User6 from "./User6";;
-import User7 from "./User7";
-import User8 from "./User8";
-import User9 from "./User9";
-import User10 from "./User10";
+
+import User1 from './User1';
+import User2 from './User2';
+import User3 from './User3';
+import User4 from './User4';
+import User5 from './User5';
+import User6 from './User6';
+import User7 from './User7';
+import User8 from './User8';
+import User9 from './User9';
+import User10 from './User10';
 
 
 const App = () => {
   return (
     <BrowserRouter>
-      <Suspense fallback={<Loading />}>
+    
         <Routes>
-          <Route path="/" element={<Navbar />} />
-          <Route path="/users/1" element={<User1 />} />
-          <Route path="/users/2" element={<User2 />} />
-          <Route path="/users/3" element={<User3 />} />
-          <Route path="/users/4" element={<User4 />} />
-          <Route path="/users/5" element={<User5 />} />
-          <Route path="/users/6" element={<User6 />} />
-          <Route path="/users/7" element={<User7 />} />
-          <Route path="/users/8" element={<User8/>} />
-          <Route path="/users/9" element={<User9 />} />
-          <Route path="/users/10" element={<User10 />} />
+         <Route path="/" element={<Navbar />} />
+
+          <Route path="/users/1" element={
+           
+            <User1 />
+          
+            } />
+
+          <Route path="/users/2" element={
+           
+            <User2 />
+          
+            } />
+
+          <Route path="/users/3" element={
+           
+            <User3 />
+          
+            } />
+
+          <Route path="/users/4" element={
+           
+            <User4 />
+          
+            } />  
+
+          <Route path="/users/5" element={
+           
+            <User5 />
+          
+            } />
+
+          <Route path="/users/6" element={
+           
+            <User6 />
+          
+            } />
+
+          <Route path="/users/7" element={
+           
+            <User7 />
+          
+            } />
+
+          <Route path="/users/8" element={
+           
+            <User8 />
+          
+            } />
+
+          <Route path="/users/9" element={
+           
+            <User9 />
+          
+            } />
+
+          <Route path="/users/10" element={
+           
+            <User10 />
+          
+            } />
+          
         </Routes>
-      </Suspense>
     </BrowserRouter>
   );
 }
