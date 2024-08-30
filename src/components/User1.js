@@ -8,7 +8,7 @@ const User1 = () => {
         <p><strong>Username: </strong>Bret</p>
         <p><strong>Email: </strong>Sincere@april.biz</p>
         <p><strong>Phone: </strong>1-770-736-8031 x56442</p>
-        <p><strong>Website: </strong>www.amit.com</p> 
+        <p><strong>Website: </strong>hildegard.org</p> 
     </div>
   )
 }
