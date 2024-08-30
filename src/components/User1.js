@@ -5,7 +5,7 @@ const User1 = () => {
     <div>
         <h1>User Details</h1>
         <p><strong>Name: </strong>Leanne Graham</p>
-        <p><strong>Username: </strong>amit@</p>
+        <p><strong>Username: </strong>Bret</p>
         <p><strong>Email: </strong>amit@gamil.com</p>
         <p><strong>Phone: </strong>1234567890</p>
         <p><strong>Website: </strong>www.amit.com</p> 

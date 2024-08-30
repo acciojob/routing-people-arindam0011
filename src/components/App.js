@@ -21,7 +21,7 @@ import User5 from "./User5";
 const App = () => {
   return (
     <BrowserRouter>
-      <Suspense fallback={<Loading />}>
+      <Suspense fallback={<div>Loading...</div>}>
         <Routes>
           <Route path="/" element={<Navbar />} />
           <Route path="/users/1" element={<User1 />} />
