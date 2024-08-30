@@ -3,14 +3,12 @@ import React from 'react'
 const User5 = () => {
   return (
     <div>
-      <div>
       <h1>User Details</h1>
-        <p><strong>Name: </strong>Vishwa</p>
-        <p><strong>Username: </strong>Vishwa@</p>
-        <p><strong>Email: </strong>vishwa@gamil.com</p>
-        <p><strong>Phone: </strong>sfsfsfsf</p>
-        <p><strong>Website: </strong>www.vishwa.com</p> 
-    </div>
+        <p><strong>Name: </strong>Chelsey Dietrich</p>
+        <p><strong>Username: </strong>Kamren</p>
+        <p><strong>Email: </strong>Lucio_Hettinger@annie.ca</p>
+        <p><strong>Phone: </strong>(254)954-1289</p>
+        <p><strong>Website: </strong>demarco.info</p> 
     </div>
   )
 }
